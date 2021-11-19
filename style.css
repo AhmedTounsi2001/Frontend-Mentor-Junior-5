@@ -1,0 +1,299 @@
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --Light-Pink: hsl(321, 100%, 78%);
+    --Light-Red: hsl(0, 100%, 63%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 18px;
+}
+
+p,
+a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    display: flex;
+    flex-flow: column;
+    gap: 2em;
+}
+
+main,
+footer {
+    display: flex;
+    flex-flow: column;
+}
+
+
+/* Start Header Style */
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    padding: 3em;
+    justify-content: space-between;
+}
+
+.top-bar img {
+    width: 250px;
+}
+
+.top-bar a {
+    padding: .5em 2em;
+    text-decoration: none;
+    color: var(--Pink);
+    border: 1px solid var(--Pink);
+    border-radius: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.h-content {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 6em;
+    margin-top: 3em;
+    gap: 5em;
+}
+
+.h-desc {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--Very-Dark-Cyan);
+    gap: 2em
+}
+
+.h-desc h1 {
+    font-size: 3em;
+}
+
+.h-desc p {
+    line-height: 1.5em;
+    font-size: 1.1em;
+    width: 41%;
+    opacity: .9;
+}
+
+.sub-but {
+    padding: 1.2em 4.8em;
+    text-decoration: none;
+    color: var(--Very-Pale-Blue);
+    background: var(--Pink);
+    border-radius: 45px;
+    font-size: 1.1em;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.rates {
+    display: flex;
+    align-items: center;
+    gap: 400px;
+}
+
+.rates h1 {
+    color: var(--Very-Dark-Cyan);
+    font-size: 5em;
+}
+
+.rates p {
+    color: gray;
+    font-size: 1.2em;
+}
+
+
+/* End Header Style */
+
+
+/* Main Main Style */
+
+main {
+    display: flex;
+    flex-flow: column;
+    gap: 200px;
+    color: var(--Very-Dark-Cyan);
+}
+
+.content {
+    display: flex;
+    flex-flow: column;
+}
+
+#c {
+    margin: 7.5em 0em;
+    padding: 6em;
+    display: flex;
+    align-items: center;
+    height: 600px;
+}
+
+.c-hero-1,
+.c-hero-3 {
+    background-color: #f6fbff;
+}
+
+.text {
+    display: flex;
+    flex-flow: column;
+    gap: 1.5em;
+}
+
+.content h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.content p {
+    width: 70%;
+}
+
+.content>div img {
+    overflow: hidden;
+    width: 70%;
+}
+
+.container-1 {
+    background: url(./img/bg-section-top-desktop-1.svg), url(./img/bg-section-bottom-desktop-1.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+    background-size: contain, contain;
+}
+
+.container-3 {
+    background: url(./img/bg-section-top-desktop-2.svg), url(./img/bg-section-bottom-desktop-2.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+    background-size: contain, contain;
+}
+
+.c-hero-1,
+.c-hero-3 {
+    flex-flow: row-reverse;
+}
+
+.c-hero-2 {
+    background-size: cover;
+    gap: 10em;
+}
+
+.sub {
+    display: flex;
+    flex-flow: column;
+    place-items: center;
+    gap: 2em;
+}
+
+.sub h2 {
+    font-size: 2.5em;
+}
+
+
+/* End Main Style */
+
+
+/* Start Footer Style */
+
+footer {
+    height: 800px;
+    background-color: #01262f;
+    display: flex;
+    place-content: center;
+    color: #fff;
+}
+
+.blocks {
+    display: flex;
+    gap: 200px;
+    padding: 6em;
+}
+
+.blocks p {
+    font-size: .8em;
+    width: 50%;
+}
+
+.logo1 {
+    width: 250px;
+}
+
+.block-1,
+.block-2 {
+    display: flex;
+    flex-flow: column;
+    gap: 1.5em;
+    width: 50%;
+    justify-content: center;
+}
+
+.contacts {
+    display: flex;
+    flex-flow: column;
+    gap: 1em;
+}
+
+.socials {
+    display: flex;
+    gap: 1em;
+    padding: 0em 6em;
+}
+
+.socials img {
+    width: 40px;
+    height: 40px;
+}
+
+.block-1 li {
+    display: flex;
+    gap: 1em;
+}
+
+.block-2 h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.block-2 form {
+    display: flex;
+    gap: 2em;
+}
+
+.block-2 input {
+    border-style: none;
+    border-radius: 5px;
+    width: 300px;
+    padding: 1em;
+}
+
+.block-2 button {
+    color: var(--Very-Pale-Blue);
+    padding: 1em;
+    width: 150px;
+    background: var(--Pink);
+    border-style: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: .9em;
+}
+
+
+/* End Footer Style */
