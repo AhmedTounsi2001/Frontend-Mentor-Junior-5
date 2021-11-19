@@ -213,33 +213,49 @@ main {
 /* Start Footer Style */
 
 footer {
+    margin-top: 5em;
     height: 800px;
-    background-color: #01262f;
     display: flex;
-    place-content: center;
+    align-items: center;
+    justify-content: flex-end;
     color: #fff;
+    background: url(./img/bg-footer-top-desktop.svg) no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+
+.f-hero {
+    padding: 6em 4em;
+    background-color: #01262f;
 }
 
 .blocks {
     display: flex;
     gap: 200px;
-    padding: 6em;
+    margin: 0em 6em;
 }
 
 .blocks p {
-    font-size: .8em;
-    width: 50%;
+    font-size: .9em;
+}
+
+.block-1 p {
+    width: 55%;
+}
+
+.block-2 p {
+    width: 75%;
 }
 
 .logo1 {
-    width: 250px;
+    width: 300px;
 }
 
 .block-1,
 .block-2 {
     display: flex;
     flex-flow: column;
-    gap: 1.5em;
+    gap: 2em;
     width: 50%;
     justify-content: center;
 }
@@ -253,7 +269,7 @@ footer {
 .socials {
     display: flex;
     gap: 1em;
-    padding: 0em 6em;
+    padding: 2em 6em;
 }
 
 .socials img {
